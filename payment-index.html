@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- local css file link -->
+    <link rel="stylesheet" href="./payment-style.css">
+    <title>Payment</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <form action="">
+
+            <div class="row">
+
+                <div class="col">
+                    <h3 class="title">billing address</h3>
+                    <div class="inputBox">
+                        <span>full name: </span>
+                        <input type="text" placeholder="enter full name">
+                    </div>
+                    <div class="inputBox">
+                        <span>email: </span>
+                        <input type="email" placeholder="enter email address">
+                    </div>
+                    <div class="inputBox">
+                        <span>address: </span>
+                        <input type="text" placeholder="ex; ntamulung">
+                    </div>
+                    <div class="inputBox">
+                        <span>city: </span>
+                        <input type="text" placeholder="ex; bamenda">
+                    </div>
+                    <div class="flex">
+
+                        <div class="inputBox">
+                            <span>country: </span>
+                            <input type="text" placeholder="ex; cameroon">
+                        </div>
+                        <div class="inputBox">
+                            <span class="id-number">ID: </span>
+                            <input type="text" placeholder="ID number">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-payment">
+                    <h3 class="title">payment</h3>
+
+                    <div class="inputBox-hr">
+                        <span>mobile money number: </span>
+                        <input type="tel" placeholder="+237 6XXXXXXXX" id="name">
+                    </div>
+
+                    <div class="inputBox">
+
+                        <span>payment methods: </span>
+                        <abbr title="MTN MoMo">
+                            <a href="#"><img src="./MTN MoMo.png" alt="MTN MoMo Logo"></a>
+                        </abbr>
+                        <abbr title="Orange Money">
+                            <a href="#"><img src="./Orange MoMo.png" alt="Orange MoMo Logo"></a>
+                        </abbr>
+
+                    </div>
+
+                </div>
+    
+            </div>
+
+            <div class="submit-btn">
+                <button class="check-btn"><a href="./receipt-index.html">proceed to checkout receipt<img src="./ticket-confirmed.png" alt="ticket" class="ticket"></a></button>
+            </div>
+
+        </form>
+
+        <!-- generating a QR Code for  proof at the agency on bus entry -->
+        <!-- <pyscript>
+            import pyqrcode
+            from PIL import Image
+            link = input("Enter anything to generate QR Code: ")
+            qr_code = pyqrcode.create(link)
+            qr_code.png("QRCode.png", scale=5)
+            Image.open("QRCode.png")
+        </pyscript> -->
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="cont">
+
+            <div class="roww">
+
+                <div>
+                    <h2>About Us</h2>
+                    <p> We are <span>Yoo</span>Travel situated in Bamenda, 
+                        the Northwest region Cameroon. We provide traveling services to 
+                        ease the movement of individuals in booking for a bus</p>
+                </div>
+
+                <div>
+                    <h4>Branch Locations</h4>
+                    <ul>
+                        <li><a href="#">Bamenda</a></li>
+                        <li><a href="#">Buea</a></li>
+                        <li><a href="#">Yaounde</a></li>
+                        <li><a href="#">Douala</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Book</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Review</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Follow us:</h4>
+                    <div class="socialBtn">
+                        <abbr title="Facebook">
+                            <a href="#"><img src="./facebook.jpg" alt=""></a>
+                        </abbr>
+                        <abbr title="Instagram">
+                            <a href="#"><img src="./instagram.jpg" alt=""></a>
+                        </abbr>
+                        <abbr title="Twitter">
+                            <a href="#"><img src="./logo.png" alt=""></a>
+                        </abbr>
+                        <abbr title="LinkedIn">
+                            <a href="#"><img src="./linkedin.png" alt=""></a>
+                        </abbr>
+                        <abbr title="WhatsApp">
+                            <a href="#"><img src="./whatsapp.svg" alt=""></a>
+                        </abbr>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>Created with love &#10084; by <span> 
+            The Group </span>| All Rights Reserved! &reg;</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

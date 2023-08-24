@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- local css file link -->
+    <link rel="stylesheet" href="./receipt-style.css">
+    <title>RECEIPT</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <form action="">
+
+            <div class="row">
+
+                <div class="col">
+                    <h3 class="title">RECEIPT</h3>
+                    <div class="inputBox">
+                        <span>Passenger Name: </span>
+                        <input type="text" placeholder="Ella">
+                    </div>
+                    <div class="inputBox">
+                        <span>Ticket No: </span>
+                        <input type="number" placeholder="5">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Date: </span>
+                        <input type="Date" placeholder="1/7/2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>Time: </span>
+                        <input type="Time" placeholder="2:00pm">
+                    </div>
+                    
+                    <div class="flex">
+
+                        <div class="inputBox">
+                            <span>Phone No: </span>
+                            <input type="number" placeholder="654429785">
+                        </div>
+                        <div class="inputBox">
+                            <span class="Bus No">Bus No: </span>
+                            <input type="number" placeholder="Bus 2">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-Receipt-confirmation">
+                    <h3 class="title"></h3>
+
+                    <div class="flex">
+
+                    <div class="inputBox-hr">
+                        <span>Amount Paid: </span>
+                        <input type="number" placeholder="5000frs" id="name">
+                    </div>
+
+
+                    
+                    <div class="inputBox">
+                        <span>Departure Time: </span>
+                        <input type="Time" placeholder="4:00pm">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Destination: </span>
+                        <input type="text" placeholder="Limbe">
+                    </div>
+
+                    </div>
+
+                </div>
+    
+            </div>
+            <div>
+                <input type="submit" value="download Receipt" class="check-btn">
+            </div>
+        </form>
+
+        <!-- generating a QR Code for  proof at the agency on bus entry -->
+        <!-- <pyscript>
+            import pyqrcode
+            from PIL import Image
+            link = input("Enter anything to generate QR Code: ")
+            qr_code = pyqrcode.create(link)
+            qr_code.png("QRCode.png", scale=5)
+            Image.open("QRCode.png")
+        </pyscript> -->
+
+    </div>
+
+</body>
+</html>

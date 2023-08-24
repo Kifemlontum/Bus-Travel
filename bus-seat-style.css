@@ -1,0 +1,248 @@
+* {
+    font-family: 'Poppins', serif;
+    box-sizing: border-box;
+}
+
+body .main {
+    background-color: #161111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.num {
+    font-size: small;
+    text-align: center;
+    padding-top: .5rem;
+    font-weight: bold;
+}
+
+.seat {
+    font-size: small;
+    background-color: #80808089;
+    height: 26px;
+    width: 32px;
+    margin: 3px;
+    font-size: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat .seat-selected {
+    background-color: #008000;
+}
+
+.seat .seat-sold {
+    background-color: #ff0101;
+}
+
+.seat:nth-of-type(2) {
+    margin-right: 18px;
+}
+
+.seat:nth-last-of-type(0) {
+    margin-left: 18px;
+}
+
+.seat:not(.seat-sold):hover {
+    cursor: pointer;
+    transition: all 0.4s;
+    transform: scale(1.2);
+    background-color: #0073ff;
+}
+
+.showcase {
+    background-color: #4949491a;
+    padding-bottom: -5px; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: fit-content;
+    border-radius: 5px;
+    color: #ffffffe4;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.showcase li small {
+    margin-left: 2px;
+}
+
+.row {
+    display: flex;
+}
+
+.showcase.seat:not(.select-sold):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+li .seat-selected {
+    background-color: green;
+}
+
+li .seat-sold {
+    background-origin: #ff0000;
+}
+
+li .seat-available {
+    background-origin: #0073ff;
+}
+
+p.text {
+    margin: 5px 0;
+}
+
+p.text span {
+    color: rgb(158, 248, 158);
+}
+
+
+/* for the footer */
+.footer {
+    padding: 70px 0 0;
+    background-color: #1e1e1e;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.footer .cont {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer .roww {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #fff;
+}
+
+.footer .roww > div:nth-child {
+    width: 35%;
+}
+
+.footer .roww > div {
+    width: 20%;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.footer .roww p {
+    margin: 20px 0;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+}
+
+.footer .roww h4 {
+    background-color: #766df433;
+    color: #766df4;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 5px 16px;
+    font-weight: 600;
+}
+
+.footer .roww ul, 
+.footer .roww li {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 15px 0;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.footer .roww li {
+    transform: translateX(-15px);
+}
+
+.footer .roww li:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 8px solid #76bdf4;
+    border-bottom: 5px solid transparent;
+}
+
+.footer .roww li:hover {
+    transform: translateX(0);
+}
+
+.footer .roww ul a {
+    text-decoration: none;
+    color: #ffffffcc;
+    margin-left: 15px;
+}
+
+.footer .roww .socialBtn {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+.footer .roww .socialBtn img {
+    text-decoration: none;
+    color: #ff19ff;
+    transition: translateY(0);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.footer .roww .socialBtn img:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+}
+
+.footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    height: 80px;
+    background-color: #0a0a0a;
+    color: #ffffffb3;
+    font-size: 0.8rem;
+}
+
+/* end of the footer */
+
+
+/* Responsiveness */
+@media only screen and (max-width: 1170px) {
+
+    .footer .roww > div {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 574px) {
+
+    .footer .roww > div {
+        width: 100% !important;
+    }
+}
+/* End of Responsiveness */
